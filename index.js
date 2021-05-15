@@ -13,7 +13,7 @@ nunjucks.configure('views', {
 })
 
 app.get('/', (req, res) => {
-    res.send("Hello World")
+    res.render('index')
 })
 
 
