@@ -199,12 +199,15 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     bottom: 6rem;
 }
 
-.teams {
+.teams,
+.satisfaction {
     display: grid;
     grid-template-columns: 55% 45%;
     overflow: hidden;
 }
-.teams .image-teams {
+.teams .image-teams,
+.commitments .image-commitments,
+.satisfaction .image-satisfaction {
     position: relative;
 }
 .teams .image-teams .left {
@@ -214,17 +217,22 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     top: -22.1rem;
     left: -62.4rem;
 }
-.teams .image-teams img {
+.teams .image-teams img,
+.commitments .image-commitments img,
+.satisfaction .image-satisfaction img {
     width: 79.2rem;
     height: 58rem;
 }
 
-.teams .info-teams {
+.teams .info-teams,
+.satisfaction .info-satisfaction {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
 }
-.teams .info-teams .block {
+.teams .info-teams .block,
+.commitments .info-commitments .block,
+.satisfaction .info-satisfaction .block {
     padding: 1.3rem 2.5rem;
     position: relative;
 }
@@ -244,7 +252,9 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     position: absolute;
 }
 
-.teams .info-teams .block h2 {
+.teams .info-teams .block h2,
+.commitments .info-commitments .block h2,
+.satisfaction .info-satisfaction .block h2 {
     font-size: 3.6rem;
     font-family: var(--title);
     font-weight: 600;
@@ -252,9 +262,23 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     height: 9.8rem;
     margin-bottom: 2.3rem;
 }
-.teams .info-teams .block p {
+.teams .info-teams .block p,
+.commitments .info-commitments .block p,
+.satisfaction .info-satisfaction .block p {
     font-size: 1.8rem;
     font-weight: 500;
     width: 48.4rem;
     height: 7.2rem;
+}
+
+.commitments {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    overflow: hidden;
+}
+
+.commitments .info-commitments {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
