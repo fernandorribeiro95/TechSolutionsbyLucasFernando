@@ -112,9 +112,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     height: 71.5rem;
     display: grid;
     grid-template-columns: 41.11% 58.89%;
-    position: absolute;
-    top: 0;
-    z-index: 0;
+    overflow: hidden;
 }
 .introductions .info {
     width: 100%;
@@ -165,6 +163,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     align-items: center;
     border-radius: 1rem;
     border: 0.1rem solid var(--green-light);
+    box-shadow: -0.4rem 0.4rem 0.25rem rgba(6, 214, 160, 0.15);
 }
 .introductions .info .contents .buttons a .start-now {
     background-color: var(--green-light);
@@ -176,7 +175,6 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     color: var(--green-light);
 }
 
-.introductions .info .contents .buttons a:hover,
 .introductions .info .contents .buttons a:hover {
     opacity: 1;
     box-shadow: 0 0 0.6rem rgba(6, 214, 160, 0.7);
@@ -185,7 +183,6 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 
 .introductions .imagem-info {
     position: relative;
-    overflow: hidden;
 }
 .introductions .imagem-info .background-color img {
     width: 97.504rem;
@@ -200,4 +197,64 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     display: flex;
     left: 11.5rem;
     bottom: 6rem;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    overflow: hidden;
+}
+.teams .image-teams {
+    position: relative;
+}
+.teams .image-teams .left {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: -22.1rem;
+    left: -62.4rem;
+}
+.teams .image-teams img {
+    width: 79.2rem;
+    height: 58rem;
+}
+
+.teams .info-teams {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.teams .info-teams .block {
+    padding: 1.3rem 2.5rem;
+    position: relative;
+}
+
+.before {
+    width: 5rem;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.after {
+    width: 5rem;
+    height: 5rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.teams .info-teams .block h2 {
+    font-size: 3.6rem;
+    font-family: var(--title);
+    font-weight: 600;
+    width: 49.3rem;
+    height: 9.8rem;
+    margin-bottom: 2.3rem;
+}
+.teams .info-teams .block p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 48.4rem;
+    height: 7.2rem;
 }
