@@ -175,6 +175,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 }
 .introductions .info .contents .buttons a .start-now:hover {
     color: #FFF;
+    transition: 300ms;
 }
 
 .introductions .info .contents .buttons a .know-more {
@@ -186,6 +187,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     transition: 300ms;
     opacity: 1;
     box-shadow: 0 0 0.6rem rgba(6, 214, 160, 0.7);
+    transition: 300ms;
 } 
 
 
@@ -301,7 +303,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 .our-services h2 {
     font-size: 4rem;
     font-weight: 600;
-    width: 26.5rem;
+    width: 27rem;
     margin: 0 auto;
     position: relative;
 }
@@ -319,7 +321,6 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 7rem;
-
 }
 
 .our-services .group-services .responsividade,
@@ -337,6 +338,7 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 .our-services .group-services .organization:hover {
     transition: 300ms;
     box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.75);
+    transition: 300ms;
 }
 
 .our-services .group-services .responsividade img {
@@ -370,4 +372,151 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     color: var(--blue-dark);
     width: 25rem;
     margin: 0 3.2rem 5.6rem;
+}
+
+.prices {
+    width: 119.6rem;
+    max-width: 1196px;
+    margin: 0 auto;
+    display: block;
+}
+.prices h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    width: 13rem;
+    margin: 0 auto;
+    position: relative;
+}
+.prices h2::before {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--green-light);
+    bottom: -2.5rem;
+    left: 4rem;
+}
+.prices .group-prices {
+    margin: 9.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+.prices .group-prices .starter,
+.prices .group-prices .pro {
+    width: 35rem;
+    height: 50rem;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--green-light);
+    box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.25);
+    text-align: center;
+}
+.prices .group-prices .starter:hover,
+.prices .group-prices .pro:hover {
+    box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.75);
+}
+.prices .group-prices .starter img,
+.prices .group-prices .pro img {
+    width: 8rem;
+    height: 8rem;
+    margin: 4.2rem auto 1.4rem;
+}
+.prices .group-prices .starter h3,
+.prices .group-prices .pro h3 {
+    font-size: 3.6rem;
+    font-family: var(--title);
+    line-height: 5.4rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+}
+.prices .group-prices .starter .value,
+.prices .group-prices .pro .value {
+    color: var(--green-light);
+    font-family: var(--subtitle);
+    margin-bottom: 2.5rem;
+}
+.prices .group-prices .starter p,
+.prices .group-prices .pro p {
+    width: 27.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: initial;
+    line-height: 2.8rem;
+    color: var(--greey);
+    margin: 0 auto 1rem;
+}
+.prices .group-prices .starter button,
+.prices .group-prices .pro button {
+    width: 27.2rem;
+    height: 5rem;
+    border-radius: 1rem;
+    color: var(--blue--light);
+    font-size: 2.4rem;
+    font-weight: 400;
+    background-color: var(--green-light);
+    box-shadow: -0.4rem 0.4rem 2rem rgba(42, 157, 143, 0.25);
+    margin-top: 4.6rem;
+    opacity: 0.8;
+}
+.prices .group-prices .starter button:hover,
+.prices .group-prices .pro button:hover {
+    opacity: 1;
+    color: #FFF;
+    transition: 300ms;
+    cursor: pointer;
+}
+.prices .group-prices .epic {
+    width: 40rem;
+    height: 60rem;
+    border-radius: 2rem;
+    background-color: var(--green-light);
+    border: 0.1rem solid var(--green-light);
+    box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.25);
+    text-align: center;
+}
+.prices .group-prices .epic:hover {
+    box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.75);
+}
+.prices .group-prices .epic img {
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem auto 4.5rem;
+}
+.prices .group-prices .epic h3 {
+    font-size: 3.6rem;
+    font-family: var(--title);
+    line-height: 5.4rem;
+    font-weight: 600;
+    color: #FFF;
+}
+.prices .group-prices .epic h3 + h3 {
+    margin-bottom: 2.5rem;
+}
+.prices .group-prices .epic p {
+    width: 27.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: initial;
+    line-height: 2.8rem;
+    color: #EAE8FF;
+    margin: 0 auto 1rem;
+}
+.prices .group-prices .epic button {
+    width: 27.2rem;
+    height: 5rem;
+    border-radius: 1rem;
+    color: var(--blue--light);
+    font-size: 2.4rem;
+    font-weight: 400;
+    background-color: var(--blue-dark);
+    box-shadow: -0.4rem 0.4rem 2rem rgba(42, 157, 143, 0.25);
+    margin-top: 4.8rem;
+    opacity: 0.8;
+}
+.prices .group-prices .epic button:hover {
+    opacity: 1;
+    color: #FFF;
+    transition: 300ms;
+    cursor: pointer;
 }
