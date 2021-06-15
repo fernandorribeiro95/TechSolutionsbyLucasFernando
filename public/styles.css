@@ -558,3 +558,55 @@ text-shadow: 0 0 0.3rem var(--blue--light);
     height: 5rem;
     cursor: pointer;
 }
+
+.testimonies .info {
+    width: 119.6rem;
+    max-width: 1196px;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4.2rem;
+}
+.testimonies .info .card {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: -0.4rem 0.4rem 2.5rem rgba(6, 214, 160, 0.25);
+}
+.testimonies .info .card .face {
+    width: 10rem;
+    height: 10rem;
+    margin: 2.7rem auto 2.2rem;
+}
+.testimonies .info .card h4 {
+    font-size: 2.4rem;
+    color: var(--blue-dark);
+    text-align: initial;
+    width: 27.5rem;
+    margin: 0 auto;
+}
+.testimonies .info .card p {
+    font-size: 1.4rem;
+    text-align: initial;
+    font-style: italic;
+    width: 29.3rem;
+    margin: 3.2rem auto 2.4rem;
+    position: relative;
+}
+.testimonies .info .card p .left {
+    position: absolute;
+    top: -1rem; 
+    left: -2rem;
+}
+.testimonies .info .card p .right {
+    position: absolute;
+    bottom: -1rem; 
+    right: -2rem;
+}
+.testimonies .info .card .classification {
+    width: 15.2rem;
+    margin-left: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+}
