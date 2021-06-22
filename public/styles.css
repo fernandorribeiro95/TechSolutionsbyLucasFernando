@@ -701,3 +701,51 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 .contact_us .contents form button:hover {
     color: #FFF;
 }
+
+footer {
+    position: relative;
+    text-align: center;
+}
+/* footer .footer_background_image {
+} */
+footer nav {
+    width: 102.6rem;
+    margin: -22.2rem auto 1.8rem;
+}
+footer nav .userful_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+footer nav .userful_links .targets {
+    text-align: initial;
+}
+footer nav .userful_links .targets h4 {
+    font-size: 2.4rem;
+    font-family: var(--title);
+    color: var(--blue--light);
+    margin-bottom: 0.8rem;
+}
+footer nav .userful_links .targets a {
+    font-size: 1.8rem;
+    color: var(--blue--light);
+    display: block;
+    cursor: pointer;
+}
+footer nav .userful_links .targets a:hover {
+    color: #FFF;
+}
+
+footer nav .social_medias {
+    width: 29rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+footer nav .social_medias img {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
