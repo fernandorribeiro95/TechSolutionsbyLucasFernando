@@ -701,13 +701,18 @@ text-shadow: 0 0 0.3rem var(--blue--light);
 .contact_us .contents form button:hover {
     color: #FFF;
 }
+.contact_us .contents .image_contact img {
+    width: 79.2rem;
+    height: 58rem;
+}
 
 footer {
     position: relative;
     text-align: center;
 }
-/* footer .footer_background_image {
-} */
+footer .footer_background_image {
+    width: 100%;
+}
 footer nav {
     width: 102.6rem;
     margin: -22.2rem auto 1.8rem;
